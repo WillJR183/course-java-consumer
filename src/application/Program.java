@@ -24,12 +24,8 @@ public class Program {
 		System.out.println();
 		
 		double update = 1.1;
-		
-		Consumer<Product> consumer = x -> {
-			x.setPrice(x.getPrice() * update);
-		};
-		
-		list.forEach(consumer);
+			
+		list.forEach(x -> x.setPrice(x.getPrice() * update));
 		
 		list.forEach(System.out::println);
 	}
