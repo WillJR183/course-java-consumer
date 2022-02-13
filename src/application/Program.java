@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Locale;
 
 import entities.Product;
-import util.ProductConsumer;
 
 public class Program {
 
@@ -23,7 +22,7 @@ public class Program {
 		
 		System.out.println();
 		
-		list.forEach(new ProductConsumer());
+		list.forEach(Product::staticProductConsumer);
 		
 		list.forEach(System.out::println);
 	}
