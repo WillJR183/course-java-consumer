@@ -22,7 +22,7 @@ public class Program {
 		
 		System.out.println();
 		
-		list.forEach(Product::staticProductConsumer);
+		list.forEach(Product::nonStaticProductConsumer);
 		
 		list.forEach(System.out::println);
 	}
